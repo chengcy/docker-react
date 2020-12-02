@@ -1,0 +1,23 @@
+{
+    "family": "docker-react-family", 
+    "networkMode": "awsvpc", 
+    "taskRoleArn": "arn:aws:iam::891270320145:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::891270320145:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "docker-react-container", 
+            "image": "891270320145.dkr.ecr.ap-southeast-1.amazonaws.com/docker-react",
+            "portMappings": [
+                {
+                    "containerPort": 4000, 
+                    "hostPort": 4000 
+                }
+            ] 
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
