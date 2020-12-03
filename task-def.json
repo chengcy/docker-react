@@ -1,5 +1,6 @@
 {
-    "family": "docker-react-family", 
+    "family": "docker-react-familiy", 
+    "networkMode": "awsvpc",
     "taskRoleArn": "arn:aws:iam::891270320145:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::891270320145:role/ecsTaskExecutionRole",
     "containerDefinitions": [
@@ -9,7 +10,7 @@
             "portMappings": [
                 {
                     "containerPort": 80, 
-                    "hostPort": 4000 
+                    "hostPort": 80 
                 }
             ] 
         }
