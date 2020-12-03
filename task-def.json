@@ -1,6 +1,5 @@
 {
     "family": "docker-react-family", 
-    "networkMode": "awsvpc", 
     "taskRoleArn": "arn:aws:iam::891270320145:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::891270320145:role/ecsTaskExecutionRole",
     "containerDefinitions": [
